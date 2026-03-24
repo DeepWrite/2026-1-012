@@ -1,0 +1,31 @@
+<!-- 한글 검색 지원을 위한 Lunr.js 패치 -->
+<!-- Just-the-docs의 Lunr.js는 기본 trimmer가 ASCII 범위 외 문자를 제거하여 한글 검색이 불가능합니다. -->
+<!-- Object.defineProperty로 lunr가 window에 할당되는 순간을 가로채어 trimmer를 교체합니다. -->
+<script>
+(function () {
+  var _lunr;
+  Object.defineProperty(window, 'lunr', {
+    configurable: true,
+    get: function () {
+      return _lunr;
+    },
+    set: function (value) {
+      _lunr = value;
+
+      // 기존 trimmer를 한글(Hangul) 문자를 보존하는 버전으로 교체
+      // 원래 \W 패턴은 ASCII 단어 문자만 인식하여 한글을 제거함
+      // 아래 패턴은 한글 음절(\uAC00-\uD7A3), 한글 자모(\u1100-\u11FF, \u3130-\u318F)를 보존
+      var koreanTrimmer = function (token) {
+        return token.update(function (s) {
+          return s
+            .replace(/^[^\w\uAC00-\uD7A3\u1100-\u11FF\u3130-\u318F]+/, '')
+            .replace(/[^\w\uAC00-\uD7A3\u1100-\u11FF\u3130-\u318F]+$/, '');
+        });
+      };
+
+      lunr.Pipeline.registerFunction(koreanTrimmer, 'trimmer');
+      _lunr.trimmer = koreanTrimmer;
+    }
+  });
+})();
+</script>
