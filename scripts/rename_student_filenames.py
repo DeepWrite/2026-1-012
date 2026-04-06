@@ -15,6 +15,7 @@ import argparse
 import sys
 from pathlib import Path
 import re
+import unicodedata
 
 
 FILENAME_PATTERN = re.compile(
@@ -24,7 +25,8 @@ FILENAME_PATTERN = re.compile(
 
 
 def normalized_name(filename: str) -> str | None:
-    match = FILENAME_PATTERN.match(filename)
+    normalized_filename = unicodedata.normalize("NFC", filename)
+    match = FILENAME_PATTERN.match(normalized_filename)
     if not match:
         return None
     return f"{match.group('canonical')}.md"
