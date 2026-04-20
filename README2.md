@@ -30,3 +30,42 @@ python3 scripts/rename_student_filenames.py --dry-run asmt-04/original asmt-04/r
 ```
 
 충돌이 있으면 해당 파일은 건너뛰고 `CONFLICT`로 표시한다.
+
+## asmt-05 PDF 링크 정리
+
+- 학생별 제출 폴더 안에 흩어져 있는 PDF를 `asmt-05/pdf/`로 모은다.
+- 파일명은 `asmt-05-반번호-학생번호-순번.pdf` 형식으로 통일한다.
+- 각 학생 markdown 끝에 `## PDF 링크` 섹션을 추가하고 절대 경로 링크를 넣는다.
+- `png`, `jpg`, `txt` 같은 비PDF 파일은 그대로 둔다.
+
+먼저 변경 예정만 확인:
+
+```bash
+python3 scripts/organize_asmt05_pdf_links.py --dry-run
+```
+
+실제로 정리:
+
+```bash
+python3 scripts/organize_asmt05_pdf_links.py
+```
+
+PDF가 없는 제출 폴더나 대상 markdown가 모호한 폴더는 경고로 출력한다.
+
+## asmt-05 제출 폴더명 정리
+
+- 학생 제출 폴더명은 내부 markdown 파일명과 동일하게 맞춘다.
+- 예: `..._amst-05`, `..._asmt-05-1`, `asmt-05 2` -> `asmt-05-012-11-이서연`
+- `pdf` 폴더는 그대로 둔다.
+
+먼저 변경 예정만 확인:
+
+```bash
+python3 scripts/rename_asmt05_submission_dirs.py --dry-run
+```
+
+실제로 변경:
+
+```bash
+python3 scripts/rename_asmt05_submission_dirs.py
+```
