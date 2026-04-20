@@ -1,0 +1,43 @@
+.topic-summary {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 0.92rem;
+}
+
+.topic-summary col.topic-col {
+  width: 16%;
+}
+
+.topic-summary col.members-col {
+  width: 15%;
+}
+
+.topic-summary col.type-col {
+  width: 16%;
+}
+
+.topic-summary col.metric-col {
+  width: 5.5ch;
+}
+
+.topic-summary col.memo-col {
+  width: auto;
+}
+
+.topic-summary th,
+.topic-summary td {
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.topic-summary th.metric-col,
+.topic-summary td.metric-col {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.topic-summary th.metric-col small {
+  display: inline-block;
+  font-size: 0.72rem;
+  line-height: 1.2;
+}

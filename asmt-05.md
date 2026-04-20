@@ -109,27 +109,37 @@ permalink: /asmt-05/
 
 ### 요약 표
 
-<table>
+<table class="topic-summary">
+  <colgroup>
+    <col class="topic-col">
+    <col class="members-col">
+    <col class="type-col">
+    <col class="metric-col">
+    <col class="metric-col">
+    <col class="metric-col">
+    <col class="metric-col">
+    <col class="memo-col">
+  </colgroup>
   <thead>
     <tr>
       <th>주제군</th>
       <th>포함 주제(학생)</th>
       <th>성격</th>
-      <th><small>확장<br>가능성</small></th>
-      <th><small>문헌<br>탐색</small></th>
-      <th><small>쟁점<br>명료성</small></th>
-      <th><small>주제<br>매력</small></th>
+      <th class="metric-col"><small>확장<br>가능성</small></th>
+      <th class="metric-col"><small>문헌<br>탐색</small></th>
+      <th class="metric-col"><small>쟁점<br>명료성</small></th>
+      <th class="metric-col"><small>주제<br>매력</small></th>
       <th>토의 메모</th>
     </tr>
   </thead>
   <tbody>
-    <tr><td>국경, 원조, 국제정의</td><td>김현주, 박정욱, 한지민, 황원이</td><td>국제정치철학, 개발윤리, 글로벌 정의</td><td align="center">상</td><td align="center">상</td><td align="center">중상</td><td align="center">상</td><td>스케일이 크고 문헌도 풍부해 강한 후보군이다. 다만 범위가 넓으니 이민 또는 원조처럼 좁혀 가는 것이 좋다.</td></tr>
-    <tr><td>차별, 보상, 평등권</td><td>김희준, 육민서</td><td>법철학, 평등이론, 분배정의</td><td align="center">중상</td><td align="center">상</td><td align="center">상</td><td align="center">상</td><td>쟁점이 매우 선명하고 찬반 구조도 분명해 토의에서 살아남기 쉽다.</td></tr>
-    <tr><td>시장 설계와 유인구조</td><td>권호민, 나윤진, 정현노</td><td>제도경제, 노동경제, 도시정의</td><td align="center">상</td><td align="center">중상</td><td align="center">중상</td><td align="center">중상</td><td>좋은 문제들이지만 결이 다르므로 하나의 주제로 남길지, 특허나 성과급처럼 따로 살릴지 판단이 필요하다.</td></tr>
-    <tr><td>정신건강, 애도, 자아</td><td>이서연, 강서윤, 강혜원</td><td>정신의학철학, 사회이론, 자아론</td><td align="center">상</td><td align="center">중상</td><td align="center">중상</td><td align="center">상</td><td>개념적 깊이가 크고 학생들의 토론도 잘 붙을 축이다.</td></tr>
-    <tr><td>데이터 거버넌스와 플랫폼 권력</td><td>김동환, 박성윤</td><td>정보법, 기술정책, 플랫폼 규제</td><td align="center">상</td><td align="center">상</td><td align="center">중상</td><td align="center">상</td><td>최신성이 높고 실제 사례가 풍부해 에세이 주제로 매력적이다.</td></tr>
-    <tr><td>AI, 창작, 저작권, 매체 책임</td><td>조성우, 손예원, 김소연</td><td>예술철학, 지식재산, 매체윤리</td><td align="center">상</td><td align="center">상</td><td align="center">상</td><td align="center">상</td><td>학생들이 흥미를 느끼기 쉬운 축이고, 쟁점도 명확해 최종 후보로 남길 만하다.</td></tr>
-    <tr><td>사회과학 설명의 한계</td><td>노후영</td><td>방법론 비판, 경제학철학</td><td align="center">중</td><td align="center">중</td><td align="center">중</td><td align="center">중</td><td>개념적으로는 흥미롭지만 다른 축에 비해 즉각적 토론성은 다소 약하다.</td></tr>
-    <tr><td>혐오표현과 민주적 존중</td><td>이영채</td><td>민주주의 이론, 표현 규제</td><td align="center">중상</td><td align="center">상</td><td align="center">상</td><td align="center">상</td><td>단독 주제로도 힘이 강하므로, 필요하면 다른 군과 억지로 합치지 않고 남겨둘 가치가 있다.</td></tr>
+    <tr><td>국경, 원조, 국제정의</td><td>김현주, 박정욱, 한지민, 황원이</td><td>국제정치철학, 개발윤리, 글로벌 정의</td><td class="metric-col">상</td><td class="metric-col">상</td><td class="metric-col">중상</td><td class="metric-col">상</td><td>스케일이 크고 문헌도 풍부해 강한 후보군이다. 다만 범위가 넓으니 이민 또는 원조처럼 좁혀 가는 것이 좋다.</td></tr>
+    <tr><td>차별, 보상, 평등권</td><td>김희준, 육민서</td><td>법철학, 평등이론, 분배정의</td><td class="metric-col">중상</td><td class="metric-col">상</td><td class="metric-col">상</td><td class="metric-col">상</td><td>쟁점이 매우 선명하고 찬반 구조도 분명해 토의에서 살아남기 쉽다.</td></tr>
+    <tr><td>시장 설계와 유인구조</td><td>권호민, 나윤진, 정현노</td><td>제도경제, 노동경제, 도시정의</td><td class="metric-col">상</td><td class="metric-col">중상</td><td class="metric-col">중상</td><td class="metric-col">중상</td><td>좋은 문제들이지만 결이 다르므로 하나의 주제로 남길지, 특허나 성과급처럼 따로 살릴지 판단이 필요하다.</td></tr>
+    <tr><td>정신건강, 애도, 자아</td><td>이서연, 강서윤, 강혜원</td><td>정신의학철학, 사회이론, 자아론</td><td class="metric-col">상</td><td class="metric-col">중상</td><td class="metric-col">중상</td><td class="metric-col">상</td><td>개념적 깊이가 크고 학생들의 토론도 잘 붙을 축이다.</td></tr>
+    <tr><td>데이터 거버넌스와 플랫폼 권력</td><td>김동환, 박성윤</td><td>정보법, 기술정책, 플랫폼 규제</td><td class="metric-col">상</td><td class="metric-col">상</td><td class="metric-col">중상</td><td class="metric-col">상</td><td>최신성이 높고 실제 사례가 풍부해 에세이 주제로 매력적이다.</td></tr>
+    <tr><td>AI, 창작, 저작권, 매체 책임</td><td>조성우, 손예원, 김소연</td><td>예술철학, 지식재산, 매체윤리</td><td class="metric-col">상</td><td class="metric-col">상</td><td class="metric-col">상</td><td class="metric-col">상</td><td>학생들이 흥미를 느끼기 쉬운 축이고, 쟁점도 명확해 최종 후보로 남길 만하다.</td></tr>
+    <tr><td>사회과학 설명의 한계</td><td>노후영</td><td>방법론 비판, 경제학철학</td><td class="metric-col">중</td><td class="metric-col">중</td><td class="metric-col">중</td><td class="metric-col">중</td><td>개념적으로는 흥미롭지만 다른 축에 비해 즉각적 토론성은 다소 약하다.</td></tr>
+    <tr><td>혐오표현과 민주적 존중</td><td>이영채</td><td>민주주의 이론, 표현 규제</td><td class="metric-col">중상</td><td class="metric-col">상</td><td class="metric-col">상</td><td class="metric-col">상</td><td>단독 주제로도 힘이 강하므로, 필요하면 다른 군과 억지로 합치지 않고 남겨둘 가치가 있다.</td></tr>
   </tbody>
 </table>
