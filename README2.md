@@ -79,3 +79,13 @@ python3 scripts/rename_asmt05_submission_dirs.py
 - `asmt-05` 하위에 새 검토 문서를 추가할 때는 학생 문서의 `nav_order`를 다시 손대지 않고, 검토 문서에 `nav_order: 0`을 주는 것을 기본 원칙으로 삼는다.
 - 패키지 응집도가 느슨한 분류는 통째로 약하다고 쓰지 말고, 코멘트 문서에서 개별 학생 주제별 생존 가능성을 따로 평가한다.
 - 이후 다른 에이전트가 같은 작업을 이어받을 때도, 먼저 이 가이드를 읽고 각 분류의 promising 여부, 경고 신호, 대표 문헌 검증 여부를 보강하면 된다.
+
+## comment 과제 운영 규칙
+
+- `asmt-XX/comment`에 새 코멘트 markdown이 들어오면, 학생 제출 폴더를 유지하지 말고 최종적으로 `comment/` 바로 아래에 평탄화한다.
+- 잘못 풀린 하위폴더명(`comment-07 2`, `comment-07 3`, `commet-07`, `.zip` 잔재 등)은 그대로 두지 않고 정리 후 제거한다.
+- 표준 스크립트는 `scripts/organize_comment_submissions.py`다.
+- 기본 실행 예시는 `python3 scripts/organize_comment_submissions.py --comment-dir asmt-07/comment --apply`이고, 같은 방식으로 어떤 `asmt-XX/comment`에도 적용한다.
+- canonical 파일명은 `comment-XX-반번호-코멘트작성자번호-이름-대상번호.md`다.
+- 작성자 이름이 깨졌거나 빠진 경우에는 같은 과제의 `original/` roster를 기준으로 복원한다.
+- frontmatter의 `title`, `parent`, `permalink`, `코멘트를 제공/받는 학생`도 파일명 기준으로 함께 맞춘다.
