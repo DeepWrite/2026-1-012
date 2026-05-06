@@ -20,7 +20,7 @@ import unicodedata
 
 FILENAME_PATTERN = re.compile(
     r"^.*?(?P<canonical>(?:revision-)?asmt-\d{2}-\d{3}-\d{2}-[가-힣]+)"
-    r"(?:-\d+)*\.md$"
+    r"(?:-\d+)*(?:\.md)+$"
 )
 
 
